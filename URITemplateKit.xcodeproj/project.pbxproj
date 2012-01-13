@@ -9,12 +9,24 @@
 /* Begin PBXBuildFile section */
 		C303DB4914C0B903007A2DBA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C303DB4814C0B903007A2DBA /* Cocoa.framework */; };
 		C303DB5314C0B903007A2DBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C303DB5114C0B903007A2DBA /* InfoPlist.strings */; };
-		C303DB5714C0B903007A2DBA /* URITemplateKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C303DB5614C0B903007A2DBA /* URITemplateKit.m */; };
 		C303DB5F14C0B904007A2DBA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C303DB5E14C0B904007A2DBA /* SenTestingKit.framework */; };
 		C303DB6014C0B904007A2DBA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C303DB4814C0B903007A2DBA /* Cocoa.framework */; };
 		C303DB6314C0B904007A2DBA /* URITemplateKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C303DB4514C0B903007A2DBA /* URITemplateKit.framework */; };
 		C303DB6914C0B904007A2DBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C303DB6714C0B904007A2DBA /* InfoPlist.strings */; };
 		C303DB6C14C0B904007A2DBA /* URITemplateKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C303DB6B14C0B904007A2DBA /* URITemplateKitTests.m */; };
+		C303DB7B14C0C58E007A2DBA /* NSObject+URITemplateKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C303DB7914C0C58E007A2DBA /* NSObject+URITemplateKit.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C303DB7C14C0C58E007A2DBA /* NSObject+URITemplateKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C303DB7A14C0C58E007A2DBA /* NSObject+URITemplateKit.m */; };
+		C303DB7E14C0C69C007A2DBA /* URITemplateKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C303DB7D14C0C69C007A2DBA /* URITemplateKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C303DB8514C0C6EE007A2DBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C303DB8414C0C6EE007A2DBA /* Foundation.framework */; };
+		C303DB9214C0C6EE007A2DBA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C303DB5E14C0B904007A2DBA /* SenTestingKit.framework */; };
+		C303DB9414C0C6EE007A2DBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C303DB9314C0C6EE007A2DBA /* UIKit.framework */; };
+		C303DB9514C0C6EE007A2DBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C303DB8414C0C6EE007A2DBA /* Foundation.framework */; };
+		C303DB9814C0C6EE007A2DBA /* libURITemplateKitLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C303DB8314C0C6EE007A2DBA /* libURITemplateKitLibrary.a */; };
+		C303DB9E14C0C6EE007A2DBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C303DB9C14C0C6EE007A2DBA /* InfoPlist.strings */; };
+		C303DBA814C0C759007A2DBA /* NSObject+URITemplateKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C303DB7914C0C58E007A2DBA /* NSObject+URITemplateKit.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C303DBA914C0C760007A2DBA /* NSObject+URITemplateKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C303DB7A14C0C58E007A2DBA /* NSObject+URITemplateKit.m */; };
+		C303DBAA14C0C7B4007A2DBA /* URITemplateKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C303DB6B14C0B904007A2DBA /* URITemplateKitTests.m */; };
+		C303DBAB14C0C81B007A2DBA /* URITemplateKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C303DB7D14C0C69C007A2DBA /* URITemplateKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +37,13 @@
 			remoteGlobalIDString = C303DB4414C0B903007A2DBA;
 			remoteInfo = URITemplateKit;
 		};
+		C303DB9614C0C6EE007A2DBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C303DB3B14C0B903007A2DBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C303DB8214C0C6EE007A2DBA;
+			remoteInfo = URITemplateKitLibrary;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -33,17 +52,25 @@
 		C303DB4B14C0B903007A2DBA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		C303DB4C14C0B903007A2DBA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C303DB4D14C0B903007A2DBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C303DB5014C0B903007A2DBA /* URITemplateKit-Info.plist */ = {isa = PBXFileReference; path = "URITemplateKit-Info.plist"; sourceTree = "<group>"; };
+		C303DB5014C0B903007A2DBA /* URITemplateKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "URITemplateKit-Info.plist"; sourceTree = "<group>"; };
 		C303DB5214C0B903007A2DBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C303DB5414C0B903007A2DBA /* URITemplateKit-Prefix.pch */ = {isa = PBXFileReference; path = "URITemplateKit-Prefix.pch"; sourceTree = "<group>"; };
-		C303DB5514C0B903007A2DBA /* URITemplateKit.h */ = {isa = PBXFileReference; path = URITemplateKit.h; sourceTree = "<group>"; };
-		C303DB5614C0B903007A2DBA /* URITemplateKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URITemplateKit.m; sourceTree = "<group>"; };
+		C303DB5414C0B903007A2DBA /* URITemplateKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "URITemplateKit-Prefix.pch"; sourceTree = "<group>"; };
 		C303DB5D14C0B904007A2DBA /* URITemplateKitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URITemplateKitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C303DB5E14C0B904007A2DBA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		C303DB6614C0B904007A2DBA /* URITemplateKitTests-Info.plist */ = {isa = PBXFileReference; path = "URITemplateKitTests-Info.plist"; sourceTree = "<group>"; };
+		C303DB6614C0B904007A2DBA /* URITemplateKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "URITemplateKitTests-Info.plist"; sourceTree = "<group>"; };
 		C303DB6814C0B904007A2DBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C303DB6A14C0B904007A2DBA /* URITemplateKitTests.h */ = {isa = PBXFileReference; path = URITemplateKitTests.h; sourceTree = "<group>"; };
+		C303DB6A14C0B904007A2DBA /* URITemplateKitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URITemplateKitTests.h; sourceTree = "<group>"; };
 		C303DB6B14C0B904007A2DBA /* URITemplateKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URITemplateKitTests.m; sourceTree = "<group>"; };
+		C303DB7914C0C58E007A2DBA /* NSObject+URITemplateKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+URITemplateKit.h"; sourceTree = "<group>"; };
+		C303DB7A14C0C58E007A2DBA /* NSObject+URITemplateKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+URITemplateKit.m"; sourceTree = "<group>"; };
+		C303DB7D14C0C69C007A2DBA /* URITemplateKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URITemplateKit.h; sourceTree = "<group>"; };
+		C303DB8314C0C6EE007A2DBA /* libURITemplateKitLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libURITemplateKitLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C303DB8414C0C6EE007A2DBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C303DB8814C0C6EE007A2DBA /* URITemplateKitLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "URITemplateKitLibrary-Prefix.pch"; sourceTree = "<group>"; };
+		C303DB9114C0C6EE007A2DBA /* URITemplateKitLibraryTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URITemplateKitLibraryTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C303DB9314C0C6EE007A2DBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C303DB9B14C0C6EE007A2DBA /* URITemplateKitLibraryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "URITemplateKitLibraryTests-Info.plist"; sourceTree = "<group>"; };
+		C303DB9D14C0C6EE007A2DBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +92,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C303DB8014C0C6EE007A2DBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C303DB8514C0C6EE007A2DBA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C303DB8D14C0C6EE007A2DBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C303DB9214C0C6EE007A2DBA /* SenTestingKit.framework in Frameworks */,
+				C303DB9414C0C6EE007A2DBA /* UIKit.framework in Frameworks */,
+				C303DB9514C0C6EE007A2DBA /* Foundation.framework in Frameworks */,
+				C303DB9814C0C6EE007A2DBA /* libURITemplateKitLibrary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -73,6 +119,8 @@
 			children = (
 				C303DB4E14C0B903007A2DBA /* URITemplateKit */,
 				C303DB6414C0B904007A2DBA /* URITemplateKitTests */,
+				C303DB8614C0C6EE007A2DBA /* URITemplateKitLibrary */,
+				C303DB9914C0C6EE007A2DBA /* URITemplateKitLibraryTests */,
 				C303DB4714C0B903007A2DBA /* Frameworks */,
 				C303DB4614C0B903007A2DBA /* Products */,
 			);
@@ -83,6 +131,8 @@
 			children = (
 				C303DB4514C0B903007A2DBA /* URITemplateKit.framework */,
 				C303DB5D14C0B904007A2DBA /* URITemplateKitTests.octest */,
+				C303DB8314C0C6EE007A2DBA /* libURITemplateKitLibrary.a */,
+				C303DB9114C0C6EE007A2DBA /* URITemplateKitLibraryTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +142,8 @@
 			children = (
 				C303DB4814C0B903007A2DBA /* Cocoa.framework */,
 				C303DB5E14C0B904007A2DBA /* SenTestingKit.framework */,
+				C303DB8414C0C6EE007A2DBA /* Foundation.framework */,
+				C303DB9314C0C6EE007A2DBA /* UIKit.framework */,
 				C303DB4A14C0B903007A2DBA /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -110,9 +162,10 @@
 		C303DB4E14C0B903007A2DBA /* URITemplateKit */ = {
 			isa = PBXGroup;
 			children = (
-				C303DB5514C0B903007A2DBA /* URITemplateKit.h */,
-				C303DB5614C0B903007A2DBA /* URITemplateKit.m */,
 				C303DB4F14C0B903007A2DBA /* Supporting Files */,
+				C303DB7914C0C58E007A2DBA /* NSObject+URITemplateKit.h */,
+				C303DB7A14C0C58E007A2DBA /* NSObject+URITemplateKit.m */,
+				C303DB7D14C0C69C007A2DBA /* URITemplateKit.h */,
 			);
 			path = URITemplateKit;
 			sourceTree = "<group>";
@@ -146,6 +199,39 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C303DB8614C0C6EE007A2DBA /* URITemplateKitLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				C303DB8714C0C6EE007A2DBA /* Supporting Files */,
+			);
+			path = URITemplateKitLibrary;
+			sourceTree = "<group>";
+		};
+		C303DB8714C0C6EE007A2DBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C303DB8814C0C6EE007A2DBA /* URITemplateKitLibrary-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C303DB9914C0C6EE007A2DBA /* URITemplateKitLibraryTests */ = {
+			isa = PBXGroup;
+			children = (
+				C303DB9A14C0C6EE007A2DBA /* Supporting Files */,
+			);
+			path = URITemplateKitLibraryTests;
+			sourceTree = "<group>";
+		};
+		C303DB9A14C0C6EE007A2DBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C303DB9B14C0C6EE007A2DBA /* URITemplateKitLibraryTests-Info.plist */,
+				C303DB9C14C0C6EE007A2DBA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -153,15 +239,26 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C303DB7B14C0C58E007A2DBA /* NSObject+URITemplateKit.h in Headers */,
+				C303DB7E14C0C69C007A2DBA /* URITemplateKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C303DB8114C0C6EE007A2DBA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C303DBA814C0C759007A2DBA /* NSObject+URITemplateKit.h in Headers */,
+				C303DBAB14C0C81B007A2DBA /* URITemplateKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C303DB4414C0B903007A2DBA /* URITemplateKit */ = {
+		C303DB4414C0B903007A2DBA /* URITemplateKitFramework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C303DB6F14C0B904007A2DBA /* Build configuration list for PBXNativeTarget "URITemplateKit" */;
+			buildConfigurationList = C303DB6F14C0B904007A2DBA /* Build configuration list for PBXNativeTarget "URITemplateKitFramework" */;
 			buildPhases = (
 				C303DB4014C0B903007A2DBA /* Sources */,
 				C303DB4114C0B903007A2DBA /* Frameworks */,
@@ -172,14 +269,14 @@
 			);
 			dependencies = (
 			);
-			name = URITemplateKit;
+			name = URITemplateKitFramework;
 			productName = URITemplateKit;
 			productReference = C303DB4514C0B903007A2DBA /* URITemplateKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C303DB5C14C0B904007A2DBA /* URITemplateKitTests */ = {
+		C303DB5C14C0B904007A2DBA /* URITemplateKitFrameworkTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C303DB7214C0B904007A2DBA /* Build configuration list for PBXNativeTarget "URITemplateKitTests" */;
+			buildConfigurationList = C303DB7214C0B904007A2DBA /* Build configuration list for PBXNativeTarget "URITemplateKitFrameworkTests" */;
 			buildPhases = (
 				C303DB5814C0B904007A2DBA /* Sources */,
 				C303DB5914C0B904007A2DBA /* Frameworks */,
@@ -191,9 +288,45 @@
 			dependencies = (
 				C303DB6214C0B904007A2DBA /* PBXTargetDependency */,
 			);
-			name = URITemplateKitTests;
+			name = URITemplateKitFrameworkTests;
 			productName = URITemplateKitTests;
 			productReference = C303DB5D14C0B904007A2DBA /* URITemplateKitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		C303DB8214C0C6EE007A2DBA /* URITemplateKitLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C303DBA214C0C6EE007A2DBA /* Build configuration list for PBXNativeTarget "URITemplateKitLibrary" */;
+			buildPhases = (
+				C303DB7F14C0C6EE007A2DBA /* Sources */,
+				C303DB8014C0C6EE007A2DBA /* Frameworks */,
+				C303DB8114C0C6EE007A2DBA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = URITemplateKitLibrary;
+			productName = URITemplateKitLibrary;
+			productReference = C303DB8314C0C6EE007A2DBA /* libURITemplateKitLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C303DB9014C0C6EE007A2DBA /* URITemplateKitLibraryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C303DBA514C0C6EE007A2DBA /* Build configuration list for PBXNativeTarget "URITemplateKitLibraryTests" */;
+			buildPhases = (
+				C303DB8C14C0C6EE007A2DBA /* Sources */,
+				C303DB8D14C0C6EE007A2DBA /* Frameworks */,
+				C303DB8E14C0C6EE007A2DBA /* Resources */,
+				C303DB8F14C0C6EE007A2DBA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C303DB9714C0C6EE007A2DBA /* PBXTargetDependency */,
+			);
+			name = URITemplateKitLibraryTests;
+			productName = URITemplateKitLibraryTests;
+			productReference = C303DB9114C0C6EE007A2DBA /* URITemplateKitLibraryTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -217,8 +350,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C303DB4414C0B903007A2DBA /* URITemplateKit */,
-				C303DB5C14C0B904007A2DBA /* URITemplateKitTests */,
+				C303DB4414C0B903007A2DBA /* URITemplateKitFramework */,
+				C303DB5C14C0B904007A2DBA /* URITemplateKitFrameworkTests */,
+				C303DB8214C0C6EE007A2DBA /* URITemplateKitLibrary */,
+				C303DB9014C0C6EE007A2DBA /* URITemplateKitLibraryTests */,
 			);
 		};
 /* End PBXProject section */
@@ -240,10 +375,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C303DB8E14C0C6EE007A2DBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C303DB9E14C0C6EE007A2DBA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		C303DB5B14C0B904007A2DBA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		C303DB8F14C0C6EE007A2DBA /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -263,7 +419,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C303DB5714C0B903007A2DBA /* URITemplateKit.m in Sources */,
+				C303DB7C14C0C58E007A2DBA /* NSObject+URITemplateKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,13 +431,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C303DB7F14C0C6EE007A2DBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C303DBA914C0C760007A2DBA /* NSObject+URITemplateKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C303DB8C14C0C6EE007A2DBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C303DBAA14C0C7B4007A2DBA /* URITemplateKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		C303DB6214C0B904007A2DBA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C303DB4414C0B903007A2DBA /* URITemplateKit */;
+			target = C303DB4414C0B903007A2DBA /* URITemplateKitFramework */;
 			targetProxy = C303DB6114C0B904007A2DBA /* PBXContainerItemProxy */;
+		};
+		C303DB9714C0C6EE007A2DBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C303DB8214C0C6EE007A2DBA /* URITemplateKitLibrary */;
+			targetProxy = C303DB9614C0C6EE007A2DBA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -298,6 +475,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				C303DB6814C0B904007A2DBA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C303DB9C14C0C6EE007A2DBA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C303DB9D14C0C6EE007A2DBA /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -361,7 +546,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "URITemplateKit/URITemplateKit-Prefix.pch";
 				INFOPLIST_FILE = "URITemplateKit/URITemplateKit-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = URITemplateKit;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -375,7 +560,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "URITemplateKit/URITemplateKit-Prefix.pch";
 				INFOPLIST_FILE = "URITemplateKit/URITemplateKit-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = URITemplateKit;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
@@ -404,6 +589,80 @@
 			};
 			name = Release;
 		};
+		C303DBA314C0C6EE007A2DBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/URITemplateKitLibrary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "URITemplateKitLibrary/URITemplateKitLibrary-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
+				PRODUCT_NAME = URITemplateKitLibrary;
+				PUBLIC_HEADERS_FOLDER_PATH = include;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C303DBA414C0C6EE007A2DBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/URITemplateKitLibrary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "URITemplateKitLibrary/URITemplateKitLibrary-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
+				PRODUCT_NAME = URITemplateKitLibrary;
+				PUBLIC_HEADERS_FOLDER_PATH = include;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C303DBA614C0C6EE007A2DBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "URITemplateKitLibrary/URITemplateKitLibrary-Prefix.pch";
+				INFOPLIST_FILE = "URITemplateKitLibraryTests/URITemplateKitLibraryTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C303DBA714C0C6EE007A2DBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "URITemplateKitLibrary/URITemplateKitLibrary-Prefix.pch";
+				INFOPLIST_FILE = "URITemplateKitLibraryTests/URITemplateKitLibraryTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -416,7 +675,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C303DB6F14C0B904007A2DBA /* Build configuration list for PBXNativeTarget "URITemplateKit" */ = {
+		C303DB6F14C0B904007A2DBA /* Build configuration list for PBXNativeTarget "URITemplateKitFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C303DB7014C0B904007A2DBA /* Debug */,
@@ -424,11 +683,27 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		C303DB7214C0B904007A2DBA /* Build configuration list for PBXNativeTarget "URITemplateKitTests" */ = {
+		C303DB7214C0B904007A2DBA /* Build configuration list for PBXNativeTarget "URITemplateKitFrameworkTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C303DB7314C0B904007A2DBA /* Debug */,
 				C303DB7414C0B904007A2DBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C303DBA214C0C6EE007A2DBA /* Build configuration list for PBXNativeTarget "URITemplateKitLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C303DBA314C0C6EE007A2DBA /* Debug */,
+				C303DBA414C0C6EE007A2DBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C303DBA514C0C6EE007A2DBA /* Build configuration list for PBXNativeTarget "URITemplateKitLibraryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C303DBA614C0C6EE007A2DBA /* Debug */,
+				C303DBA714C0C6EE007A2DBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

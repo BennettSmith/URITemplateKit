@@ -1,14 +1,18 @@
 //
-//  URITemplateKit.h
+//  NSObject+URITemplateKit.m
 //  URITemplateKit
 //
 //  Created by Bennett Smith on 1/13/12.
 //  Copyright (c) 2012 iDevelopSoftware, Inc. All rights reserved.
 //
 
-#ifndef URITemplateKit_URITemplateKit_h
-#define URITemplateKit_URITemplateKit_h
-
 #import "NSObject+URITemplateKit.h"
 
-#endif
+@implementation NSObject (URITemplateKit)
+
+- (NSString *)stringFromClass
+{
+    return NSStringFromClass([self class]);
+}
+
+@end

@@ -8,6 +8,8 @@
 
 #import "URITemplateKitTests.h"
 
+#import "NSObject+URITemplateKit.h"
+
 @implementation URITemplateKitTests
 
 - (void)setUp
@@ -24,9 +26,13 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testStringFromClass
 {
-    STFail(@"Unit tests are not implemented yet in URITemplateKitTests");
+    STAssertEqualObjects([[[NSObject alloc] init] stringFromClass], @"NSObject", nil);
+    
+    STAssertEqualObjects([@"" stringFromClass], @"__NSCFConstantString", nil);
+    
+    STAssertEqualObjects([NSObject stringFromClass], @"NSObject", nil);
 }
 
 @end
