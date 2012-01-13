@@ -14,8 +14,6 @@
 		C303DB6314C0B904007A2DBA /* URITemplateKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C303DB4514C0B903007A2DBA /* URITemplateKit.framework */; };
 		C303DB6914C0B904007A2DBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C303DB6714C0B904007A2DBA /* InfoPlist.strings */; };
 		C303DB6C14C0B904007A2DBA /* URITemplateKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C303DB6B14C0B904007A2DBA /* URITemplateKitTests.m */; };
-		C303DB7B14C0C58E007A2DBA /* NSObject+URITemplateKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C303DB7914C0C58E007A2DBA /* NSObject+URITemplateKit.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		C303DB7C14C0C58E007A2DBA /* NSObject+URITemplateKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C303DB7A14C0C58E007A2DBA /* NSObject+URITemplateKit.m */; };
 		C303DB7E14C0C69C007A2DBA /* URITemplateKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C303DB7D14C0C69C007A2DBA /* URITemplateKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C303DB8514C0C6EE007A2DBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C303DB8414C0C6EE007A2DBA /* Foundation.framework */; };
 		C303DB9214C0C6EE007A2DBA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C303DB5E14C0B904007A2DBA /* SenTestingKit.framework */; };
@@ -23,10 +21,12 @@
 		C303DB9514C0C6EE007A2DBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C303DB8414C0C6EE007A2DBA /* Foundation.framework */; };
 		C303DB9814C0C6EE007A2DBA /* libURITemplateKitLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C303DB8314C0C6EE007A2DBA /* libURITemplateKitLibrary.a */; };
 		C303DB9E14C0C6EE007A2DBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C303DB9C14C0C6EE007A2DBA /* InfoPlist.strings */; };
-		C303DBA814C0C759007A2DBA /* NSObject+URITemplateKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C303DB7914C0C58E007A2DBA /* NSObject+URITemplateKit.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		C303DBA914C0C760007A2DBA /* NSObject+URITemplateKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C303DB7A14C0C58E007A2DBA /* NSObject+URITemplateKit.m */; };
 		C303DBAA14C0C7B4007A2DBA /* URITemplateKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C303DB6B14C0B904007A2DBA /* URITemplateKitTests.m */; };
 		C303DBAB14C0C81B007A2DBA /* URITemplateKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C303DB7D14C0C69C007A2DBA /* URITemplateKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C303DBAE14C0D23E007A2DBA /* URITemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = C303DBAC14C0D23E007A2DBA /* URITemplate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C303DBAF14C0D23E007A2DBA /* URITemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = C303DBAD14C0D23E007A2DBA /* URITemplate.m */; };
+		C303DBB014C0D24A007A2DBA /* URITemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = C303DBAC14C0D23E007A2DBA /* URITemplate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C303DBB114C0D24A007A2DBA /* URITemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = C303DBAD14C0D23E007A2DBA /* URITemplate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +61,6 @@
 		C303DB6814C0B904007A2DBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C303DB6A14C0B904007A2DBA /* URITemplateKitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URITemplateKitTests.h; sourceTree = "<group>"; };
 		C303DB6B14C0B904007A2DBA /* URITemplateKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URITemplateKitTests.m; sourceTree = "<group>"; };
-		C303DB7914C0C58E007A2DBA /* NSObject+URITemplateKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+URITemplateKit.h"; sourceTree = "<group>"; };
-		C303DB7A14C0C58E007A2DBA /* NSObject+URITemplateKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+URITemplateKit.m"; sourceTree = "<group>"; };
 		C303DB7D14C0C69C007A2DBA /* URITemplateKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URITemplateKit.h; sourceTree = "<group>"; };
 		C303DB8314C0C6EE007A2DBA /* libURITemplateKitLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libURITemplateKitLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C303DB8414C0C6EE007A2DBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -71,6 +69,8 @@
 		C303DB9314C0C6EE007A2DBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		C303DB9B14C0C6EE007A2DBA /* URITemplateKitLibraryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "URITemplateKitLibraryTests-Info.plist"; sourceTree = "<group>"; };
 		C303DB9D14C0C6EE007A2DBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C303DBAC14C0D23E007A2DBA /* URITemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URITemplate.h; sourceTree = "<group>"; };
+		C303DBAD14C0D23E007A2DBA /* URITemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URITemplate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,9 +163,9 @@
 			isa = PBXGroup;
 			children = (
 				C303DB4F14C0B903007A2DBA /* Supporting Files */,
-				C303DB7914C0C58E007A2DBA /* NSObject+URITemplateKit.h */,
-				C303DB7A14C0C58E007A2DBA /* NSObject+URITemplateKit.m */,
 				C303DB7D14C0C69C007A2DBA /* URITemplateKit.h */,
+				C303DBAC14C0D23E007A2DBA /* URITemplate.h */,
+				C303DBAD14C0D23E007A2DBA /* URITemplate.m */,
 			);
 			path = URITemplateKit;
 			sourceTree = "<group>";
@@ -239,8 +239,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C303DB7B14C0C58E007A2DBA /* NSObject+URITemplateKit.h in Headers */,
 				C303DB7E14C0C69C007A2DBA /* URITemplateKit.h in Headers */,
+				C303DBAE14C0D23E007A2DBA /* URITemplate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,8 +248,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C303DBA814C0C759007A2DBA /* NSObject+URITemplateKit.h in Headers */,
 				C303DBAB14C0C81B007A2DBA /* URITemplateKit.h in Headers */,
+				C303DBB014C0D24A007A2DBA /* URITemplate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +419,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C303DB7C14C0C58E007A2DBA /* NSObject+URITemplateKit.m in Sources */,
+				C303DBAF14C0D23E007A2DBA /* URITemplate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +435,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C303DBA914C0C760007A2DBA /* NSObject+URITemplateKit.m in Sources */,
+				C303DBB114C0D24A007A2DBA /* URITemplate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,6 @@
 #ifndef URITemplateKit_URITemplateKit_h
 #define URITemplateKit_URITemplateKit_h
 
-#import "NSObject+URITemplateKit.h"
+#import "URITemplate.h"
 
 #endif

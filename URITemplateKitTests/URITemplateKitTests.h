@@ -8,6 +8,8 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface URITemplateKitTests : SenTestCase
+@interface URITemplateKitTests : SenTestCase {
+    NSMutableDictionary *stdVars;
+}
 
 @end
