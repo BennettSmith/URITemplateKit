@@ -18,5 +18,4 @@
 
 - (id)initWithPattern:(NSString *)uriTemplatePattern;
 - (NSString *)expandUsingVariables:(NSDictionary *)variables;
-
 @end
